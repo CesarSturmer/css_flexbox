@@ -1,0 +1,149 @@
+.cabecalhoPrincipal .container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;  /* espaço entre os dois elementos dentro do bloco container */
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* espaço envolta de dois elementos dentro do bloco list */
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+
+    /*flex-direction: column;  = colocar a direção do flex box em coluna 
+    flex-wrap: wrap; = quebrar para proxima coluna 
+    flex-flow: column wrap = atalho para usar as duas propriedades em uma só */
+
+    flex-flow: column wrap;
+    height: 250px;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+
+}
+
+/* pega os intens que sao multiplos de 4  para tirar a margin  */
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+/* pega os intens que sao multiplos de 4 + 1  para tirar a margin  */
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1; /* aumenta o espaço na divisao do flex container*/
+    flex-shrink: 2; /* diminui 2x mais o tamanho conforme diminui a telar*/
+}
+
+
+
+
+
+
+/* parte mobile. A largura máxima que que quero chegue com essas configurações É 768PX DE LARGURA. apartir disso volta config desktop */
+@media(max-width: 768px) {
+.cabecalhoPrincipal-nav {
+    flex-direction: column;
+}
+
+.cabecalhoPrincipal .container {
+     flex-direction: column;
+     align-items: initial;
+     text-align: center;
+}
+
+.conteudoPrincipal-cursos {
+    flex-direction: column;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 100%;
+    /*flex-wrap: wrap; */
+}
+
+.rodapePrincipal-navMap-list {
+    height: auto;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+
+}
+
+
+.rodapePrincipal-contatoForm {
+    width: 100%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+}
+
+.cabecalhoPrincipal-nav-link-app {
+     order: -1; /*muda a ORDEM DO FLEXBOX nesse caso colocando esse item em primeiro lugar na lista */
+}
+
+.videoSobre .container {
+    flex-direction: column;
+}
+
+.videoSobre-video {
+    margin: 0 auto;
+}
+
+
+
+}
