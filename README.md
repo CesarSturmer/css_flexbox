@@ -1,10 +1,12 @@
+# About 📃
+Alurinha projeto criando durante o curso de Frontend da alura. Aprendendo a posicionar elementos com display flex e todas suas propriedades. Site responsivo para todos 
+dispositivos. 
 
 
 
 ![alurinha](https://imgur.com/lkbAsAk.png)
 
-Alurinha projeto criando durante o curso de Frontend da alura. Aprendendo a posicionar elementos com display flex e todas suas propriedades. Site responsivo para todos 
-dispositivos. 
+
 
 
 
