@@ -4,7 +4,7 @@ desenvolvido no curso da Alura de felxbox
 
 
 
-![alt text](https://github.com/[CesarSturmer]/[css_flexbox]/blob/[master]/alurinha-layout-desktop.png?raw=true)
+![alt text](https://github.com/[CesarSturmer]/[css_flexbox]/blob/[branch]/alurinha-layout-desktop.png?raw=true)
 
 
 
